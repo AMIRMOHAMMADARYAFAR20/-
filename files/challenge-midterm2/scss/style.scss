@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../Inter/Inter-Regular.ttf)format("truetype");
+    font-weight:400;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../Inter/Inter-SemiBold.ttf)format("truetype");
+    font-weight:500;
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../Inter/Inter-Bold.ttf);
+    font-weight:600;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+/*    
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+font-family: "Inter";
+*/
+margin: 0 auto;
+.body{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+width: 428px;
+border-radius: 24px;
+background-color: rgba(53, 91, 62, 1);
+margin: 0 auto;
+height: 926px;
+
+ .header-title{
+ display:flex;
+ align-items: center;
+ width: 216px;
+ height: 48px;
+ gap: 16px;
+ font-weight: 400;
+ color:rgba(255, 255, 255, 1);
+ padding: 50px  0 ;
+ }
+
+.card {
+    background-color:rgb(255,255,255,1);
+    width: 428px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+.image-footer {
+ width: 429px;
+ height: 220px;
+}
+.describtion {
+ .title-describtion {
+ width: 380px;
+ height: 60px;
+ font-size: 10px;
+ padding: 32px 24px;
+ h1 {
+ color: rgba(53, 91, 62, 1);
+ }
+}
+ .deport {
+    width: 380px;
+    height: 16px;
+    padding: 24px;
+   p {
+    color:rgba(88, 116, 94, 1);
+   }
+ }
+ .form {
+    width: 380px;
+    height:296px;
+    padding: 24px;
+    gap: 24px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    .Email {
+        width:380px;
+        height:80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:8px;
+        font-family: "Inter";
+        font-size: 16px;
+         font-weight: 600;
+         line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        label{
+            color:rgba(88, 116, 94, 1);
+        }
+        input {
+          width:380px;
+          height: 56px;
+          padding: 16px;
+          border-radius: 8px;
+          border: 1px solid rgba(184, 214, 191, 1);
+        }
+    }
+  .password {
+        width:380px;
+        height:80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:8px;
+        font-family: "Inter";
+        font-size: 16px;
+         font-weight: 600;
+         line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+
+        label{
+            color:rgba(88, 116, 94, 1);
+        }
+        input {
+          width:380px;
+          height: 56px;
+          padding: 16px;
+          border-radius: 8px;
+          border: 1px solid rgba(184, 214, 191, 1);
+        }
+  }
+  .Remember {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:rgba(53, 91, 62, 1);
+    width: 360px;
+    height: 16px;
+    a {
+        color: rgba(53, 91, 62, 1);
+    }
+  }
+ }
+ .join {
+    width: 380px;
+   height: 48px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 24px;
+  button{
+    width: 178px;
+    height: 48px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid white;    
+}
+.btn-l {
+button {
+background-color:rgba(2, 150, 100, 1);
+color:rgba(255, 255, 255, 1);
+}
+}
+.btn-r {
+    button {
+    background-color: rgb(255,255,255,1);
+    color:rgba(2, 150, 100, 1);
+    border: 1px solid rgba(2, 150, 100, 1);    
+
+    }
+}
+
+ }
+ .footer-tagmenu {
+    margin-top: 60px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:12px;
+    align-items: center;
+    margin-bottom: 40px;
+    .top {
+        color:rgba(88, 116, 94, 1);
+    }
+    .bottom {
+        color: rgba(53, 91, 62, 1);
+        display: flex;
+        justify-content: space-around;
+        gap: 60px;
+    }
+ }
+
+}
+
+}
+     }
+@media  screen and (min-width:600px) {
+    .body {
+        width:100%;
+        overflow-x: hidden;
+        display: flex;
+        position: relative;
+       .heaader-title{
+        display: flex;
+        position: absolute;
+        bottom:-100%;
+        right: 50%;
+       }
+        .card{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+          
+         
+        .image-footer{
+            order:2;
+            background:url(../images/Frame\ 21.png) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 60%;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+
+        }  
+        .describtion{
+            order:1;
+        }
+    }
+}
+}
+     }

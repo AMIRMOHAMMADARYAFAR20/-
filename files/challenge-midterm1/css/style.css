@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../Inter/Inter-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../Inter/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../Inter/Inter-Bold.ttf) format("truetype");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+body .body {
+  background-color: hsl(206, 44%, 89%);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 24px;
+  gap: 5px;
+  width: 428px;
+  height: 926px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+body .body .header-title {
+  width: 247px;
+  height: 64px;
+  display: flex;
+  gap: 7px;
+  justify-content: space-around;
+}
+body .body .header-title .svg {
+  width: 53.33px;
+  height: 48px;
+}
+body .body .header-title .title {
+  color: hsl(211, 24%, 24%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .body .card {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.4) 100%);
+  width: 426px;
+  height: 794px;
+  top: 130px;
+  left: 1px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+  align-items: center;
+  margin-bottom: 1px;
+  box-shadow: 0px 52px 48px -32px rgb(163, 183, 199);
+  box-shadow: 0px 25px 32px -32px rgb(141, 180, 211);
+}
+body .body .card .image #img-1 {
+  width: 394px;
+  height: 215px;
+  border-radius: 8px;
+}
+body .body .card .image .image-footer {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.1px;
+  position: relative;
+  top: -18%;
+  left: -6%;
+}
+body .body .card .image .image-footer .beside-image {
+  display: flex;
+  align-items: flex-end;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(211, 24%, 24%);
+}
+body .body .card .image .image-footer .beside-image span {
+  color: rgb(217, 3, 39);
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+}
+body .body .card .form {
+  position: static;
+  top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 364px;
+  height: 296px;
+  top: 447px;
+  left: 32px;
+  gap: 24px;
+}
+body .body .card .form .Email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 364px;
+  height: 56px;
+}
+body .body .card .form .Email label {
+  font-family: "Inter";
+  font-weight: 600;
+  color: hsl(211, 24%, 24%);
+  text-align: start;
+}
+body .body .card .form .Email input {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 1px solid rgb(198, 209, 220);
+  width: 364px;
+  padding: 16px;
+}
+body .body .card .form .Password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 364px;
+  height: 56px;
+}
+body .body .card .form .Password label {
+  font-family: "Inter";
+  font-weight: 600;
+  color: hsl(211, 24%, 24%);
+  text-align: start;
+}
+body .body .card .form .Password input {
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  border: 1px solid rgb(198, 209, 220);
+  width: 364px;
+  padding: 16px;
+}
+body .body .card .form .tickmark-forgetpassword {
+  display: flex;
+  flex-direction: row;
+  width: 364px;
+  height: 16px;
+  justify-content: space-between;
+}
+body .body .card .form .tickmark-forgetpassword .checktick input {
+  background-color: #d90327;
+  width: 16px;
+  height: 16px;
+}
+body .body .card .form .tickmark-forgetpassword .forget a {
+  color: rgb(31, 40, 50);
+}
+body .body .card .form .btn button {
+  width: 364px;
+  height: 48px;
+  padding: 16px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(217, 3, 39);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+}
+body .body .card .identify {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 3%;
+  gap: 24px;
+}
+body .body .card .identify .notRobert {
+  display: flex;
+  justify-content: center;
+}
+body .body .card .identify .notRobert a {
+  color: rgb(31, 40, 50);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+body .body .card .identify .doublebtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+body .body .card .identify .doublebtn .btnr button {
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(47, 61, 76);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+  width: 170px;
+  height: 48px;
+  padding: 16px;
+}
+body .body .card .identify .doublebtn .btnl button {
+  border-radius: 8px;
+  color: rgb(217, 3, 39);
+  background-color: white;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid rgb(217, 3, 39);
+  width: 170px;
+  height: 48px;
+  padding: 16px;
+}
+@media screen and (min-width: 600px) {
+  body .body {
+    width: auto;
+    padding: 40px, 0px, 70px, 0px;
+    overflow-x: hidden;
+    border-radius: 0;
+    right: 50%;
+  }
+  body .body .form {
+    display: flex;
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

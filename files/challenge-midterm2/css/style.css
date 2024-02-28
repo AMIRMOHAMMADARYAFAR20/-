@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../Inter/Inter-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../Inter/Inter-SemiBold.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../Inter/Inter-Bold.ttf);
+  font-weight: 600;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter";
+  */
+  margin: 0 auto;
+}
+body .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 428px;
+  border-radius: 24px;
+  background-color: rgb(53, 91, 62);
+  margin: 0 auto;
+  height: 926px;
+}
+body .body .header-title {
+  display: flex;
+  align-items: center;
+  width: 216px;
+  height: 48px;
+  gap: 16px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  padding: 50px 0;
+}
+body .body .card {
+  background-color: rgb(255, 255, 255);
+  width: 428px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+body .body .card .image-footer {
+  width: 429px;
+  height: 220px;
+}
+body .body .card .describtion .title-describtion {
+  width: 380px;
+  height: 60px;
+  font-size: 10px;
+  padding: 32px 24px;
+}
+body .body .card .describtion .title-describtion h1 {
+  color: rgb(53, 91, 62);
+}
+body .body .card .describtion .deport {
+  width: 380px;
+  height: 16px;
+  padding: 24px;
+}
+body .body .card .describtion .deport p {
+  color: rgb(88, 116, 94);
+}
+body .body .card .describtion .form {
+  width: 380px;
+  height: 296px;
+  padding: 24px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+body .body .card .describtion .form .Email {
+  width: 380px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body .body .card .describtion .form .Email label {
+  color: rgb(88, 116, 94);
+}
+body .body .card .describtion .form .Email input {
+  width: 380px;
+  height: 56px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(184, 214, 191);
+}
+body .body .card .describtion .form .password {
+  width: 380px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body .body .card .describtion .form .password label {
+  color: rgb(88, 116, 94);
+}
+body .body .card .describtion .form .password input {
+  width: 380px;
+  height: 56px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(184, 214, 191);
+}
+body .body .card .describtion .form .Remember {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(53, 91, 62);
+  width: 360px;
+  height: 16px;
+}
+body .body .card .describtion .form .Remember a {
+  color: rgb(53, 91, 62);
+}
+body .body .card .describtion .join {
+  width: 380px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+body .body .card .describtion .join button {
+  width: 178px;
+  height: 48px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid white;
+}
+body .body .card .describtion .join .btn-l button {
+  background-color: rgb(2, 150, 100);
+  color: rgb(255, 255, 255);
+}
+body .body .card .describtion .join .btn-r button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(2, 150, 100);
+  border: 1px solid rgb(2, 150, 100);
+}
+body .body .card .describtion .footer-tagmenu {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+body .body .card .describtion .footer-tagmenu .top {
+  color: rgb(88, 116, 94);
+}
+body .body .card .describtion .footer-tagmenu .bottom {
+  color: rgb(53, 91, 62);
+  display: flex;
+  justify-content: space-around;
+  gap: 60px;
+}
+@media screen and (min-width: 600px) {
+  body .body {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    position: relative;
+  }
+  body .body .heaader-title {
+    display: flex;
+    position: absolute;
+    bottom: -100%;
+    right: 50%;
+  }
+  body .body .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+  body .body .card .image-footer {
+    order: 2;
+    background: url(../images/Frame\ 21.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 60%;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  body .body .card .describtion {
+    order: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
